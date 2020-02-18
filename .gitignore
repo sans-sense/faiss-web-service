@@ -101,4 +101,10 @@ ENV/
 # mkdocs documentation
 /site
 
+# vscode folder
+.vscode
+
+# Configuraiton files
+faiss-service.ini
+
 # End of https://www.gitignore.io/api/python
