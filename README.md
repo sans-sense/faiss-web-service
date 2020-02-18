@@ -7,9 +7,13 @@ Don't want PRs to interfere, so creating a new repo with similar code.
 Focus is not on docker but on running it locally. Renamed faiss_index.py to resolve module and file name problems. Made long() to int() for python 3.x
 
 ## To Run
+### Setup
+<pre>
+conda install faiss-cpu -c pytorch
+</pre>
 
 ### Start
-Copy the default-faiss-service.ini to project root folder (same place as this readme.md), name it faiss-service.ini.  
+Copy the default-faiss-service.ini to project root folder (same place as this readme.md), name it faiss-service.ini.  Copy the index and ids_vectors.p file from resources to the folders referenced in faiss-service.ini file.
 <pre>
 export PYTHON_PATH=$PYTHON_PATH:./src
 python src/app.py
